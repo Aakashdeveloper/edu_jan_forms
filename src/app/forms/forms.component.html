@@ -4,7 +4,7 @@
         Angular form
     </div>
     <div class="panel-body">
-            <form #form="ngForm" >
+            <form #form="ngForm" (submit)="submitForm(form)">
                     <div class="form-group" [class.has-error]="firstName.invalid">
                         <label class="control-label" for="firstname"> FirstName</label>
                         <input type="text" placeholder="firstname" name="firstname" required
